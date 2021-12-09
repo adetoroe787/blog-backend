@@ -3,18 +3,17 @@ from datetime import datetime
 from django.template.defaultfilters import slugify
 
 class Categories(models.TextChoices):
-    WORLD = 'world'
-    ENVIRONMENT = 'environment'
-    TECHNOLOGY = 'technology'
-    DESIGN = 'design'
-    CULTURE = 'culture'
-    BUSINESS = 'business'
-    POLITICS = 'politics'
-    OPINION = 'opinion'
-    SCIENCE = 'science'
-    HEALTH = 'health'
-    STYLE = 'style'
-    TRAVEL = 'travel'
+    python = 'Python'
+    django = 'Django'
+    javascript = 'Javascript'
+    api = 'API'
+    react = 'React'
+    restapi = 'Rest API'
+    nodejs = 'NodeJs'
+    express = 'ExpressJs'
+    database= 'Databases'
+    webdev = 'Web Development'
+    security = 'Security'
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=50)
